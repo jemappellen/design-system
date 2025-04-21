@@ -1,0 +1,186 @@
+/* CSS for Basic Structure*/
+
+:root {
+    --light-beige: #E4E3D3;
+    --soft-blue: #A9BCD0;
+    --neon-red: #FF220C;
+    --dark-gray: #292F36;
+}
+
+body {
+    font-family: 'Space Mono', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-beige);
+    color: var(--dark-gray);
+}
+
+header {
+    grid-area: header;
+    background-color: var(--light-beige);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid var(--dark-gray);
+    border-radius: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Space Mono', serif;
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    "colors colors"
+    "typography text-styles"
+    "buttons icons";
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/*Color Palette*/
+#colors {
+    grid-area: colors;
+    border: 1px solid var(--dark-gray);
+    border-radius: 20px;
+}
+
+.color-swatch {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.color-swatch .color-name,
+.color-swatch .color-value {
+    position: absolute;
+    left: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.color-swatch .color-name {
+    top: 10px;
+    font-size: 14px;
+}
+
+.color-swatch .color-value {
+    bottom: 10px;
+    font-size: 12px;
+}
+
+/*Typography*/
+#typography {
+    grid-area: typography;
+    border: 1px solid var(--dark-gray);
+    border-radius: 20px;
+}
+
+.font-example {
+    margin-bottom: 20px;
+}
+
+.font-example h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.font-example p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/*Text Styles*/
+#text-styles {
+    grid-area: text-styles;
+    border: 1px solid var(--dark-gray);
+    border-radius: 20px;
+}
+
+.text-style {
+    margin-bottom: 20px;
+}
+
+.text-style h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.text-style p {
+    margin: 0;
+}
+
+/*Buttons*/
+#buttons {
+    grid-area: buttons;
+    border: 1px solid var(--dark-gray);
+    border-radius: 20px;
+}
+
+.button-example {
+    display: flex;
+    gap: 10px;
+}
+
+.filled-button {
+    background-color: var(--neon-red);
+    color: var(--light-beige);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tonal-button {
+    background-color: var(--soft-blue);
+    color: var(--dark-gray);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.outlined-button {
+    background-color: transparent;
+    border: 1px solid var(--dark-gray);
+    color: var(--);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*Icons*/
+#icons {
+    grid-area: icons;
+    border: 1px solid var(--dark-gray);
+    border-radius: 20px;
+}
+
+.icon-example {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-example i {
+    font-size: 24px;
+    color: var(--neon-red);
+}
+
