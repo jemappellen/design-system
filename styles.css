@@ -9,6 +9,7 @@
 
     --bg-color: white;
     --text-color: var(--night);
+    --accent-color: var(--glaucous);
 
     /* Font sizes */
     --font-size-xl: 4rem;
@@ -88,6 +89,14 @@ section h2 {
 
     .color-swatch {
         border: 1px solid white;
+    }
+
+    footer {
+        background-color: var(--glaucous);
+    }
+    
+    footer a {
+        color: var(--powder-blue);
     }
 }
 
@@ -215,6 +224,7 @@ section h2 {
 
 button {
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 2rem;;
 }
 
 .filled-button {
@@ -297,6 +307,24 @@ button {
 .icon-example i:active {
     position: relative;
     top: 1.5px;
+}
+
+/*Footer*/
+footer {
+    padding: 20px;
+    text-align: right;
+    background-color: var(--powder-blue);
+    color: var(--text-color);
+    font-size: var(--font-size-xs);
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Design */
