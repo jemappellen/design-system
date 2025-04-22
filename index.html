@@ -5,75 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design System</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@300;400;700&family=Inconsolata:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+<body id="light-mode" id="dark-mode">
     <header>
         <h1>Website Design System</h1>
+        <a href="" id="theme-switch">Dark Mode</a>
     </header>
     <main>
 
         <section id="colors">
             <h2>Color Palette</h2>
-            <div class="color-swatch" style="background-color: #E4E3D3;">
-                <span class="color-name">Light Beige</span>
-                <span class="color-value">#E4E3D3</span>
-            </div>
-            <div class="color-swatch" style="background-color: #A9BCD0;">
-                <span class="color-name">Soft Blue</span>
-                <span class="color-value">#A9BCD0</span>
-            </div>
-            <div class="color-swatch" style="background-color: #FF220C;">
-                <span class="color-name">Neon Red</span>
-                <span class="color-value">#FF220C</span>
-            </div>
-            <div class="color-swatch" style="background-color: #292F36;">
-                <span class="color-name">Dark Gray</span>
-                <span class="color-value">#292F36</span>
+            <div id="colors-container">
+                <div class="color-swatch" style="background-color: #F3F0E8;">
+                    <span class="color-name">Alabaster</span>
+                    <span class="color-value">#F3F0E8</span>
+                </div>
+                <div class="color-swatch" style="background-color: #8E8E76;">
+                    <span class="color-name">Battleship Gray</span>
+                    <span class="color-value">#8E8E76</span>
+                </div>
+                <div class="color-swatch" style="background-color: #AFC4DF;">
+                    <span class="color-name">Powder Blue</span>
+                    <span class="color-value">#AFC4DF</span>
+                </div>
+                <div class="color-swatch" style="background-color: #5A82E1;">
+                    <span class="color-name">Glaucous</span>
+                    <span class="color-value">#5A82E1</span>
+                </div>
+                <div class="color-swatch" style="background-color: #0A0A0A;">
+                    <span class="light-color-name">Night</span>
+                    <span class="light-color-value">#0A0A0A</span>
+                </div>
             </div>
         </section>
         
         <section id="typography">
             <h2>Typography</h2>
-            <div class="font-example" style="font-family: 'Space Mono', monospace;">
-                <h3>Space Mono</h3>
-                <p>The quick brown fox jumps over the lazy dog.</p>
+        
+            <div class="font-example" style="font-family: 'Raleway', sans-serif;">
+                <h3>Raleway</h3>
+                <p class="regular">The quick brown fox jumps over the lazy dog. (Regular)</p>
+                <p class="regular italic">The quick brown fox jumps over the lazy dog. (Regular Italic)</p>
+                <p class="bold">The quick brown fox jumps over the lazy dog. (Bold)</p>
+                <p class="bold italic">The quick brown fox jumps over the lazy dog. (Bold Italic)</p>
             </div>
-            <div class="font-example" style="font-family: 'Space Grotesk', sans-serif;">
-                <h3>Space Grotesk</h3>
-                <p>The quick brown fox jumps over the lazy dog.</p>
-            </div>
-            <div class="font-example" style="font-family: 'Inconsolata', monospace;">
-                <h3>Inconsolata</h3>
-                <p>The quick brown fox jumps over the lazy dog.</p>
+        
+            <div class="font-example" style="font-family: 'Raleway Dots', sans-serif;">
+                <h3>Raleway Dots</h3>
+                <p class="regular" style="font-size: var(--font-size-m);">The quick brown fox jumps over the lazy dog. (Regular)</p>
+                <p class="regular italic" style="font-size: var(--font-size-m);">The quick brown fox jumps over the lazy dog. (Regular Italic)</p>
             </div>
         </section>
+        
 
         <section id="text-styles">
             <h2>Text Styles</h2>
             <div class="text-style">
-                <h3>Heading 1 (H1)</h3>
-                <p style="font-size: 24px; font-weight: bold;">This is a heading 1</p>
+                <h3>Heading 1 (XL)</h3>
+                <p style="font-size: var(--font-size-xl); font-weight: bold;">This is a heading 1</p>
             </div>
             <div class="text-style">
-                <h3>Heading 2 (H2)</h3>
-                <p style="font-size: 22px; font-weight: bold;">This is a heading 2</p>
+                <h3>Heading 2 (L)</h3>
+                <p style="font-size: var(--font-size-l); font-weight: bold;">This is a heading 2</p>
             </div>
             <div class="text-style">
-                <h3>Heading 3 (H3)</h3>
-                <p style="font-size: 20px; font-weight: bold;">This is a heading 3</p>
+                <h3>Heading 3 (M)</h3>
+                <p style="font-size: var(--font-size-m); font-weight: bold;">This is a heading 3</p>
             </div>
             <div class="text-style">
-                <h3>Subheading</h3>
-                <p style="font-size: 18px; font-weight: 300;">This is a subheading</p>
+                <h3>Subheading (S)</h3>
+                <p style="font-size: var(--font-size-s); font-weight: 400;">This is a subheading</p>
             </div>
             <div class="text-style">
-                <h3>Body Text</h3>
-                <p style="font-size: 16px;">This is body text. It is used for the main content of the page.</p>
+                <h3>Body Text (XS)</h3>
+                <p style="font-size: var(--font-size-xs);">This is body text. It is used for the main content of the page.</p>
             </div>
             <div class="text-style">
-                <h3>Caption</h3>
-                <p style="font-size: 12px;">This is a caption. It is used for small, secondary text.</p>
+                <h3>Caption (XSS)</h3>
+                <p style="font-size: var(--font-size-xxs);">This is a caption. It is used for small, secondary text.</p>
             </div>
         </section>
         
@@ -90,7 +103,7 @@
             <h2>Icons</h2>
             <div class="icon-example">
                 <i class="fab fa-telegram"></i>
-                <i class="fab fa-x-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-facebook"></i>
                 <i class="fab fa-linkedin"></i>
