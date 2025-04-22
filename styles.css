@@ -1,5 +1,4 @@
 /* CSS for Basic Structure*/
-
 :root {
     /* Color Palette */
     --alabaster: #F3F0E8;
@@ -47,7 +46,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: var(--night);
+    color: var(--text-color);
     font-size: var(--font-size-s);
     font-family: 'Raleway', sans-serif;
 }
@@ -76,12 +75,17 @@ section h2 {
 /* Themes */
 
 #light-mode {
-    
+    --bg-color: white;
+    --text-color: var(--night);
 }
 
 #dark-mode {
     --bg-color: var(--night);
     --text-color: white;
+
+    .color-swatch {
+        border: 1px solid white;
+    }
 }
 
 /*Color Palette*/
@@ -211,8 +215,8 @@ button {
 }
 
 .filled-button {
-    background-color: var(--night);
-    color: var(--alabaster);
+    background-color: var(--text-color);
+    color: var(--bg-color);
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -250,8 +254,8 @@ button {
 
 .outlined-button {
     background-color: transparent;
-    border: 1.5px solid var(--night);
-    color: var(--night);
+    border: 1.5px solid var(--text-color);
+    color: var(--text-color);
     padding: 8px 18px;
     border-radius: 20px;
     font-size: var(--font-size-s);
@@ -280,7 +284,7 @@ button {
 
 .icon-example i {
     font-size: var(--font-size-l);
-    color: var(--night);
+    color: var(--text-color);
 }
 
 .icon-example i:hover {
@@ -293,7 +297,6 @@ button {
 }
 
 /* Responsive Design */
-
 @media (max-width: 768px) {
     main {
         grid-template-columns: 1fr;
